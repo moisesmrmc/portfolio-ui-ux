@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
+    <!-- Barra de navegación sticky para secciones -->
+    <nav class="section-nav">
+        <ul>
+            <li><a href="#problema">Problema</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#wireframes">Wireframes & Tests</a></li>
+            <li><a href="#ui">Diseño UI y Logotipo</a></li>
+            <li><a href="#resultados">Resultados</a></li>
+        </ul>
+    </nav>
     <header>
         <nav class="container">
             <div class="logo"><a href="../index.html" class="logo">Moisés Mora Maciá</a></div>
@@ -40,179 +50,241 @@
         </nav>
     </header>
 
-    <section class="project-header">
+    <section class="project-header bg-light" id="header">
         <div class="container">
             <div class="project-header-content">
                 <h1 class="project-title">Marta Torres</h1>
-                <p class="project-subtitle">Branding Update para Marta Torres</p>
+                <p class="project-subtitle">Branding personal, web y redes sociales</p>
             </div>
+            <div class="project-header-featured card">
+                <img src="../img/marta01.png" alt="Mockup hero del proyecto" class="img-contain" onclick="openModal(this.src)">
+            </div>  
         </div>
     </section>
 
-    <section class="project-overview">
+    <!-- SECCIÓN: PROBLEMA -->
+    <section class="bg-dark" id="problema">
         <div class="container">
-            <div class="overview-content">
+            <div class="section-grid">
                 <div class="overview-text">
-                    <h2>Descripción del Proyecto</h2>
-                    <p> El proyecto consistió en renovar su branding personal para reflejar una imagen más coherente, 
-                        actual y profesional.
-                    </p>
-                    <p>
-                        A partir de un briefing inicial, se diseñó un logotipo trazado a mano, se redefinió la paleta de colores y se actualizó su 
-                        presencia digital con el rediseño completo de su página web.
-                    </p>
-                    <p>
-                        Además, se planteó una propuesta visual para la 
-                        renovación de su perfil de Instagram, manteniendo coherencia estética en todos sus canales.
-                    </p> 
+                    <h2 class="verde-titulo">Problema</h2>
+                    <p>Marta Torres necesitaba renovar su branding personal para reflejar una imagen más coherente, actual y profesional, tanto en su web como en sus redes sociales. Su identidad visual anterior no transmitía adecuadamente su personalidad ni su propuesta de valor.</p>
                 </div>
-                <div class="overview-image">
-                    <img src="../img/marta01.png" alt="Vista general de CriptoVault">
+                <div class="overview-image card">
+                    <img src="../img/marta-problema.png" alt="Imagen de Problema"  onclick="openModal(this.src)">
+                    
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="project-gallery">
-        <div class="container">
-            <h2 class="gallery-title">Galería del Proyecto</h2>
+    <!-- SECCIÓN: RESEARCH -->
+    <section class="bg-light" id="research">
+        <div class="container">            
+            <div class="overview-text">
+                <h2 class="verde-titulo">Research</h2>
+                <p>Se realizó un análisis de referentes en branding personal y presencia digital, identificando tendencias visuales y estrategias de comunicación efectivas. Se analizaron perfiles de profesionales similares para definir una propuesta visual diferenciadora y alineada con los valores de Marta.</p>     
+                <p>
+                    El research incluyó la recopilación de moodboards, paletas de color y estilos tipográficos que transmitieran cercanía, profesionalidad y creatividad.
+                </p>
+            </div>               
+    
             <div class="gallery-grid">
-                <!-- featured -->
                 <div class="gallery-item featured-image">
-                    <img src="../img/marta05.png" alt="Página principal completa" onclick="openModal(this.src)">
+                    <img src="../img/marta-inspiracion.png" alt="Moodboard e inspiración" class="img-contain" onclick="openModal(this.src)">
                     <div class="gallery-item-info">
-                        <h3>Mockup de la página web</h3>
-                        <p>Vistazo a la página web rediseñada</p>
+                        <h3>Moodboard e inspiración</h3>
+                        <p>Referencias visuales y paletas de color</p>
                     </div>
                 </div>
-                
-                <!-- gallery-item-simple (sin texto) -->
-                 <div class="gallery-item-simple">
-                    <img src="../img/marta-wireframe.png" alt="Imagen simple 1" onclick="openModal(this.src)">
-                </div>
-                 <div class="gallery-item-simple">
-                    <img src="../img/marta01.png" alt="Imagen simple 1" onclick="openModal(this.src)">
-                </div>
-                 <div class="gallery-item-simple">
-                    <img src="../img/marta02.png" alt="Imagen simple 1" onclick="openModal(this.src)">
-                </div>
-                <div class="gallery-item-simple">
-                    <img src="../img/marta03.png" alt="Imagen simple 1" onclick="openModal(this.src)">
-                </div> 
-                <div class="gallery-item-simple">
-                    <img src="../img/marta04.png" alt="Imagen simple 1" onclick="openModal(this.src)">
-                </div>
-                 <div class="gallery-item-simple">
-                    <img src="../img/marta05.png" alt="Imagen simple 1" onclick="openModal(this.src)">
-                </div>
-                <div class="gallery-item-simple">
-                    <img src="../img/marta06.png" alt="Imagen simple 1" onclick="openModal(this.src)">
-                </div> 
-                <div class="gallery-item-simple">
-                    <img src="../img/marta07.png" alt="Imagen simple 1" onclick="openModal(this.src)">
-                </div> 
-                <div class="gallery-item-simple">
-                    <img src="../img/marta08.png" alt="Imagen simple 1" onclick="openModal(this.src)">
-                </div> 
-                
-                <div class="gallery-item">
-                    <img src="../img/marta-inspiracion.png" alt="Dashboard preview" onclick="openModal(this.src)">
-                    <div class="gallery-item-info">
-                        <h3>Moodboard</h3>
-                        <p>Inspiración y creación de wireframes</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="../img/marta-ilustracion.png" alt="Dashboard preview" onclick="openModal(this.src)">
-                    <div class="gallery-item-info">
-                        <h3>Creación de ilustraciones</h3>
-                        <p>Recursos para web</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="../img/marta-tarjeta.png" alt="Dashboard preview" onclick="openModal(this.src)">
-                    <div class="gallery-item-info">
-                        <h3>Creación de papelería</h3>
-                        <p>Tarjeta de visita</p>
-                    </div>
-                </div>
-                <!-- gallery-item con texto 
-                <div class="gallery-item">
-                    <img src="../img/americano02.png" alt="Sección de características" onclick="openModal(this.src)">
-                    <div class="gallery-item-info">
-                        <h3>Sección de Características</h3>
-                        <p>Presentación de las principales funcionalidades de la aplicación</p>
-                    </div>
-                </div>
-                -->
-                
-                
-              
+               
             </div>
         </div>
     </section>
 
-    <section class="technical-details">
+    <!-- SECCIÓN: WIREFRAMES & TESTS -->
+    <section class="bg-light" id="wireframes">
+        <div class="container">
+            <h2 class="verde-titulo">Wireframes & Tests</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item-medium">
+                    <img src="../img/marta-wireframe.png" alt="Wireframe web" class="img-contain" onclick="openModal(this.src)">
+                    <div class="gallery-item-info">
+                        <h3>Wireframe web</h3>
+                        <p>Estructura y navegación de la web</p>
+                    </div>
+                </div>
+                <div class="gallery-item-medium">
+                    <img src="../img/marta-ilustracion.png" alt="Ilustración personal" class="img-contain" onclick="openModal(this.src)">
+                    <div class="gallery-item-info">
+                        <h3>Ilustración personal</h3>
+                        <p>Recursos gráficos para la web y redes sociales</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: DISEÑO UI -->
+    <section class="bg-dark" id="ui">
+        <div class="container">
+            <h2 class="verde-titulo">Diseño UI y Logotipo</h2>
+            <div class="section-grid">
+                <div class="overview-text">
+                    <p>El diseño UI se centró en transmitir la personalidad de Marta, combinando una paleta de colores cálidos y tipografía moderna para lograr una imagen cercana y profesional. Se crearon componentes visuales coherentes para la web y recursos adaptados para redes sociales.</p>
+                    <p>
+                        <strong>Paleta de colores:</strong> Tonos cálidos y neutros que transmiten cercanía y profesionalidad, combinados con acentos en colores pastel para destacar elementos clave.
+                    </p>
+                    <p>
+                        <strong>Tipografía:</strong> Se utilizó una fuente sans-serif moderna y elegante, que aporta claridad y refuerza la identidad personal de la marca.
+                    </p>
+                </div>
+                <div class="overview-image card">
+                    <img src="../img/marta02.png" alt="Diseño logotipo" class="img-contain" onclick="openModal(this.src)">
+                </div>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item-medium">
+                    <img src="../img/marta03.png" alt="Tipografía" class="img-contain" onclick="openModal(this.src)">
+                    <div class="gallery-item-info">
+                        <h3>Elección de la tipografía</h3>
+                        <p>Tipografía elegante y moderna</p>
+                    </div>
+                </div>
+                <div class="gallery-item-medium">
+                    <img src="../img/marta04.png" alt="Colors" class="img-contain" onclick="openModal(this.src)">
+                    <div class="gallery-item-info">
+                        <h3>Elección de colores</h3>
+                        <p>Elección de colores para su marca personal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: RESULTADOS -->
+    <section class="bg-light" id="resultados">
+        <div class="container">
+            <h2 class="verde-titulo">Resultados</h2>
+            <div class="section-grid">
+                <div class="overview-text">
+                    <p>El nuevo branding y la web permitieron a Marta Torres proyectar una imagen más profesional y coherente, facilitando la conexión con su público y mejorando su presencia digital. El rediseño fue bien recibido y ayudó a diferenciar su marca personal en el sector.</p>
+                </div>
+                <div class="overview-image card">
+                    <img src="../img/marta06.png" alt="Resultados visuales" class="img-contain" onclick="openModal(this.src)">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: GALERÍA ADICIONAL -->
+    <section class="bg-dark" id="galeria">
+        <div class="container">
+            <h2 class="gallery-title">Galería adicional</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item-medium">
+                    <img src="../img/marta01.png" class="img-contain" alt="Marta 01" onclick="openModal(this.src)">
+                </div>
+                <div class="gallery-item-medium">
+                    <img src="../img/marta05.png" class="img-contain" alt="Marta 05" onclick="openModal(this.src)">
+                </div>
+                <div class="gallery-item-medium">
+                    <img src="../img/marta06.png" class="img-contain" alt="Marta 06" onclick="openModal(this.src)">
+                </div>
+                <div class="gallery-item-medium">
+                    <img src="../img/marta07.png" class="img-contain" alt="Marta 07" onclick="openModal(this.src)">
+                </div>
+                <div class="gallery-item-medium">
+                    <img src="../img/marta08.png" class="img-contain" alt="Marta 08" onclick="openModal(this.src)">
+                    <div class="gallery-item-info">
+                        <h3>Perfil de Instagram</h3>
+                        <p>Adaptado a su personalidad y estilo</p>
+                    </div>
+                </div>
+                <div class="gallery-item-medium">
+                    <img src="../img/marta-ilustracion.png" class="img-contain" alt="Marta Ilustración" onclick="openModal(this.src)">
+                    <div class="gallery-item-info">
+                        <h3>Recursos gráficos para web, post de redes sociales, etc</h3>
+                        <p>Acordes con su personalidad y el estilo de la web</p>
+                    </div>
+                </div>
+                <div class="gallery-item-medium">
+                    <img src="../img/marta-tarjeta.png" class="img-contain" alt="Marta Tarjeta" onclick="openModal(this.src)">
+                    <div class="gallery-item-info">
+                        <h3>Diseño de tarjeta de visita</h3>
+                        <p>Simple, elegante y profesional</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: HERRAMIENTAS Y APRENDIZAJES CLAVE -->
+    <section class="bg-light" id="herramientas">
         <div class="container">
             <div class="details-grid">
                 <div class="details-section">
                     <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="16 18 22 12 16 6"/>
-                            <polyline points="8 6 2 12 8 18"/>
-                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
                         Herramientas Utilizadas
                     </h3>
                     <div class="tech-list">
-                        <span class="tech-tag">Adobe Photoshop</span>
-                        <span class="tech-tag">Adobe Illustrator</span>
                         <span class="tech-tag">Figma</span>
-                        <span class="tech-tag">Redes Sociales</span>
-                        <span class="tech-tag">Instagram</span>
+                        <span class="tech-tag">Photoshop</span>
+                        <span class="tech-tag">Illustrator</span>
                         <span class="tech-tag">UI</span>
                         <span class="tech-tag">UX</span>
-                        <span class="tech-tag">Responsive Design</span>
-
+                        <span class="tech-tag">Redes Sociales</span>
+                        <span class="tech-tag">Instagram</span>
                     </div>
                     <p style="color: #b0b0b0; margin-top: 1rem;">
-                        El proyecto se llevó a cabo principalmente con Illustrator para el diseño de logotipo, colores y tipografías.
-                        También se hizo uso de Photoshop para retoque fotográfico y Figma para el rediseño de la Web y del perfil de Instagram
+                        Para el desarrollo del branding personal de Marta Torres se emplearon herramientas como <strong>Figma</strong> para la creación de wireframes, prototipos y la estructura de la web. <strong>Photoshop</strong> e <strong>Illustrator</strong> se utilizaron para la edición de imágenes, ilustraciones y la creación de elementos gráficos personalizados, tanto para la web como para redes sociales. Se prestó especial atención a la coherencia visual y la adaptación de los recursos a distintos canales digitales, asegurando una imagen profesional y reconocible en todos los soportes, incluyendo Instagram y otros perfiles sociales.
                     </p>
                 </div>
-                
                 <div class="details-section">
                     <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-library-big-icon lucide-library-big"><rect width="8" height="18" x="3" y="3" rx="1"/><path d="M7 3v18"/><path d="M20.4 18.9c.2.5-.1 1.1-.6 1.3l-1.9.7c-.5.2-1.1-.1-1.3-.6L11.1 5.1c-.2-.5.1-1.1.6-1.3l1.9-.7c.5-.2 1.1.1 1.3.6Z"/></svg>                        Aprendizajes Clave
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-library-big-icon lucide-library-big"><rect width="8" height="18" x="3" y="3" rx="1"/><path d="M7 3v18"/><path d="M20.4 18.9c.2.5-.1 1.1-.6 1.3l-1.9.7c-.5.2-1.1-.1-1.3-.6L11.1 5.1c-.2-.5.1-1.1.6-1.3l1.9-.7c.5-.2 1.1.1 1.3.6Z"/></svg>
+                        Aprendizajes Clave
                     </h3>
-                    
                     <div class="learning-item">
-                        <h4>Adaptar las necesidades de un cliente real</h4>
-                        <p>A través de un briefing inicial, se llevaron a cabo todas las modificaciones necesarias para llegar hacia un resultado
-                            final que gustó a ambas partes.
-                        </p>
+                        <h4>Definición de identidad visual personal</h4>
+                        <p>Aprendí a crear una identidad visual coherente y diferenciadora para una marca personal, adaptando el diseño a distintos canales digitales y asegurando que la personalidad de Marta se reflejara en todos los soportes.</p>
                     </div>
-                    
                     <div class="learning-item">
-                        <h4>Trabajo en equipo</h4>
-                        <p>Este proyecto tuve el placer de trabajar con un compañero. A través de la colaboración de ambos llegamos a un produto final completo</p>
+                        <h4>Adaptación de recursos a redes sociales</h4>
+                        <p>Mejoré mi capacidad para diseñar recursos gráficos y visuales que funcionan tanto en web como en redes sociales, especialmente en Instagram, manteniendo la coherencia y el atractivo visual.</p>
                     </div>
+                    <div class="learning-item">
+                        <h4>Coherencia de marca en diferentes plataformas</h4>
+                        <p>Desarrollé estrategias para mantener la coherencia visual y de mensaje en todos los puntos de contacto digitales, desde la web hasta la papelería y los perfiles sociales.</p>
+                    </div>
+                    <div class="learning-item">
+                        <h4>Trabajo con ilustraciones y recursos gráficos personalizados</h4>
+                        <p>Profundicé en la creación de ilustraciones y elementos gráficos únicos que aportan personalidad y refuerzan la identidad de la marca personal.</p>
+                    </div>
+                    <div class="learning-item">
+                        <h4>Comunicación y feedback con el cliente</h4>
+                        <p>Perfeccioné mis habilidades para presentar propuestas, justificar decisiones de diseño y recoger feedback constructivo, logrando un resultado final alineado con las expectativas de Marta.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Modal -->
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Moisés Mora Maciá. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Modal para imágenes -->
     <div id="imageModal" class="modal" onclick="closeModal()">
         <span class="close" onclick="closeModal()">&times;</span>
         <div class="modal-content">
             <img id="modalImage" src="" alt="Imagen ampliada">
         </div>
     </div>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Moisés Mora Maciá. Todos los derechos reservados.</p>
-        </div>
-    </footer>
 
     <script>
         function openModal(imageSrc) {

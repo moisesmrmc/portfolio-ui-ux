@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
+    <!-- Barra de navegación sticky para secciones -->
+    <nav class="section-nav">
+        <ul>
+            <li><a href="#problema">Problema</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#wireframes">Wireframes & Tests</a></li>
+            <li><a href="#ui">Diseño UI</a></li>
+            <li><a href="#resultados">Resultados</a></li>
+        </ul>
+    </nav>
     <header>
         <nav class="container">
             <div class="logo"><a href="../index.html" class="logo">Moisés Mora Maciá</a></div>
@@ -40,189 +50,225 @@
         </nav>
     </header>
 
-    <section class="project-header">
+    <section class="project-header bg-light" id="header">
         <div class="container">
             <div class="project-header-content">
                 <h1 class="project-title">Deershaper Seeds</h1>
-                <p class="project-subtitle">Tienda online de cannabis</p>
+                <p class="project-subtitle">Tienda online de semillas de cannabis premium</p>
             </div>
+            <div class="project-header-featured card">
+                <img src="../img/seeds-mockup01.png" alt="Mockup hero del proyecto" class="img-contain" onclick="openModal(this.src)">
+            </div>  
         </div>
     </section>
 
-    <section class="project-overview">
+    <!-- SECCIÓN: PROBLEMA -->
+    <section class="bg-dark" id="problema">
         <div class="container">
-            <div class="overview-content">
+            <div class="section-grid">
                 <div class="overview-text">
-                    <h2>Descripción del Proyecto</h2>
-                    <p>Diseño web y material gráfico para Deershaper Seeds, marca especializada en la venta de semillas de cannabis.</p>
-                    <p>El proyecto incluyó el desarrollo de su sitio web así como la creación de contenido visual para redes sociales (posts de Instagram) y cartelería promocional, 
-                        manteniendo una identidad coherente y alineada con el estilo de la marca.
-                    </p>
-                     <p>
-                        Proceso completo de diseño, desde wireframes iniciales hasta el diseño final.
-                     </p>
+                    <h2 class="verde-titulo">Problema</h2>
+                    <p>Deershaper Seeds necesitaba una presencia digital sólida y coherente para destacar en el competitivo mercado de semillas de cannabis. La marca carecía de una identidad visual definida y de una plataforma online que facilitara la experiencia de compra y transmitiera confianza a sus clientes.</p>
                 </div>
-                <div class="overview-image">
-                    <img src="../img/seeds09.jpg" alt="">
+                <div class="overview-image card">
+                    <img src="../img/seeds09.jpg" alt="Imagen cartelería"  onclick="openModal(this.src)">
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="project-gallery">
+    <!-- SECCIÓN: RESEARCH -->
+    <section class="bg-light" id="research">
+        <div class="container">            
+            <div class="overview-text">
+                <h2 class="verde-titulo">Research</h2>
+                <p>Se analizaron usuarios modelo para comprender sus necesidades y expectativas al comprar semillas online. Además, se realizó un benchmarking de la competencia, identificando buenas prácticas en usabilidad, confianza y diseño visual en tiendas del sector.</p>     
+                <p>
+                    El análisis de la competencia mostró que muchas webs del sector presentan una experiencia poco intuitiva y visualmente anticuada. Nuestra propuesta apuesta por una navegación clara, una imagen moderna y una experiencia de usuario que inspire confianza y profesionalidad.
+                </p>
+            </div>               
+        </div>
+    </section>
+
+    <!-- SECCIÓN: WIREFRAMES & TESTS -->
+    <section class="bg-light" id="wireframes">
         <div class="container">
-            <h2 class="gallery-title">Galería del Proyecto</h2>
+            <h2 class="verde-titulo">Wireframes & Tests</h2>
             <div class="gallery-grid">
-                <!-- featured -->
-                <div class="gallery-item featured-image">
-                    <img src="../img/seeds01.png" alt="Página principal completa" onclick="openModal(this.src)">
+                <div class="gallery-item-medium">
+                    <img src="../img/seeds-wireframe01.png" alt="Wireframe homepage" class="img-contain" onclick="openModal(this.src)">
                     <div class="gallery-item-info">
-                        <h3>Homepage</h3>
-                        <p>Nav and hero section</p>
+                        <h3>Wireframe Homepage</h3>
+                        <p>Boceto de la estructura principal y navegación</p>
                     </div>
                 </div>
-                <div class="gallery-item">
-                    <img src="../img/seeds-wireframe01.png" alt="Dashboard preview" onclick="openModal(this.src)">
+                <div class="gallery-item-medium">
+                    <img src="../img/seeds-wireframe02.png" alt="Wireframe carrito" class="img-contain" onclick="openModal(this.src)">
                     <div class="gallery-item-info">
-                        <h3>Wireframes</h3>
-                        <p>Homepage & Hero section</p>
+                        <h3>Wireframe Carrito</h3>
+                        <p>Diseño inicial del proceso de compra y test de usabilidad</p>
                     </div>
                 </div>
-                <div class="gallery-item">
-                    <img src="../img/seeds-wireframe02.png" alt="Dashboard preview" onclick="openModal(this.src)">
-                    <div class="gallery-item-info">
-                        <h3>Wireframes</h3>
-                        <p>Carrito de la compra</p>
-                    </div>
-                </div>
-                 <div class="gallery-item">
-                    <img src="../img/seeds-hover.png" alt="Dashboard preview" onclick="openModal(this.src)">
-                    <div class="gallery-item-info">
-                        <h3>Efectos</h3>
-                        <p>Hover state</p>
-                    </div>
-                </div>
-                <!-- gallery-item-simple (sin texto) -->
-
-                <div class="gallery-item-simple">
-                    <img src="../img/seeds02.png" alt="Imagen simple 1" onclick="openModal(this.src)">
-                </div>
-                <div class="gallery-item-simple">
-                    <img src="../img/seeds04.png" alt="Imagen simple 1" onclick="openModal(this.src)">
-                </div>
-                <div class="gallery-item">
-                    <img src="../img/seeds05.png" alt="Dashboard preview" onclick="openModal(this.src)">
-                    <div class="gallery-item-info">
-                        <h3>Carrito de la compra</h3>
-                        <p></p>
-                    </div>
-                </div>
-                <div class="gallery-item-simple">
-                    <img src="../img/seeds06.png" alt="Imagen simple 1" onclick="openModal(this.src)">
-                </div>  
-                <div class="gallery-item">
-                    <img src="../img/seeds07.png" alt="Dashboard preview" onclick="openModal(this.src)">
-                    <div class="gallery-item-info">
-                        <h3>Página de producto</h3>
-                        <p></p>
-                    </div>
-                </div> 
-                <div class="gallery-item-simple">
-                    <img src="../img/seeds08.jpg" alt="Imagen simple 1" onclick="openModal(this.src)">
-                </div> 
-                 <div class="gallery-item-simple">
-                    <img src="../img/seeds09.jpg" alt="Imagen simple 1" onclick="openModal(this.src)">
-                </div> 
-                 <div class="gallery-item-simple">
-                    <img src="../img/seeds10.jpg" alt="Imagen simple 1" onclick="openModal(this.src)">
-                </div> 
-                
-                <!-- gallery-item con texto 
-                <div class="gallery-item">
-                    <img src="../img/americano02.png" alt="Sección de características" onclick="openModal(this.src)">
-                    <div class="gallery-item-info">
-                        <h3>Sección de Características</h3>
-                        <p>Presentación de las principales funcionalidades de la aplicación</p>
-                    </div>
-                </div>
-                -->
-                <div class="gallery-item">
-                    <img src="../img/seeds11.jpg" alt="Dashboard preview" onclick="openModal(this.src)">
-                    <div class="gallery-item-info">
-                        <h3>Cartelería</h3>
-                        <p>Post para Redes Sociales</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="../img/seeds-fullpage.png" alt="Dashboard preview" onclick="openModal(this.src)">
-                    <div class="gallery-item-info">
-                        <h3>Homepage completa</h3>
-                        <p>Diseño de la página principal </p>
-                    </div>
-                </div>
-                
-              
             </div>
         </div>
     </section>
 
-    <section class="technical-details">
+    <!-- SECCIÓN: DISEÑO UI -->
+    <section class="bg-dark" id="ui">
+        <div class="container">
+            <h2 class="verde-titulo">Diseño UI</h2>
+            <div class="section-grid">
+                <div class="overview-text">
+                    <p>El diseño UI de Deershaper Seeds se centró en transmitir confianza, profesionalidad y modernidad, diferenciándose de la competencia mediante una estética limpia y visualmente atractiva. <br>Se seleccionó un color naranja/dorado como acento principal, que transmite confianza y calidad premium, reforzando la percepción de valor de la marca. Esta paleta se combina con verdes que conectan con la naturaleza y grises neutros para aportar equilibrio y claridad. Los componentes y patrones visuales se diseñaron para ser reutilizables y consistentes en toda la web, facilitando la navegación y mejorando la experiencia del usuario. Además, se cuidó especialmente la jerarquía visual y la legibilidad, empleando una tipografía sans-serif moderna que aporta personalidad y facilita la identificación de la marca.</p>
+                                       
+                </div>
+                <div class="overview-image card">
+                    <img src="../img/seeds04.png" alt="Diseño UI" class="img-contain" onclick="openModal(this.src)">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: RESULTADOS -->
+    <section class="bg-light" id="resultados">
+        <div class="container">
+            <h2 class="verde-titulo">Resultados</h2>
+            <div class="section-grid">
+                <div class="overview-text">
+                    <p>El rediseño permitió a Deershaper Seeds posicionarse como una marca moderna y confiable en el sector. La nueva web mejoró la experiencia de usuario, facilitando la navegación y el proceso de compra. El material gráfico desarrollado para redes sociales y cartelería ayudó a reforzar la identidad visual y aumentar el alcance de la marca.</p>
+                </div>
+                <div class="overview-image card">
+                    <img src="../img/seeds-mockup01.png" alt="Resultados visuales" class="img-contain" onclick="openModal(this.src)">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: GALERÍA ADICIONAL -->
+    <section class="bg-dark" id="galeria">
+        <div class="container">
+            <h2 class="gallery-title">Galería adicional</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item featured-image">
+                    <img src="../img/seeds-fullpage.png" class="img-contain" alt="Mockup completo" onclick="openModal(this.src)">
+                    <div class="gallery-item-info">
+                        <h3>Mockup completo</h3>
+                        <p>Vista general de la web en desktop</p>
+                    </div>
+                </div>
+                <div class="gallery-item-medium">
+                    <img src="../img/seeds-hover.png" class="img-contain" alt="Hover de producto" onclick="openModal(this.src)">
+                    <div class="gallery-item-info">
+                        <h3>Hover de producto</h3>
+                        <p>Interacción visual al pasar el ratón sobre un producto</p>
+                    </div>
+                </div>
+                <div class="gallery-item-medium">
+                    <img src="../img/seeds01.png" class="img-contain" alt="Seeds 01" onclick="openModal(this.src)">
+                    <div class="gallery-item-info">
+                        <h3>Hero section</h3>
+                        <p>Hero section con imagen de semillas y texto de bienvenida</p>
+                    </div>
+                </div>
+                <div class="gallery-item-medium">
+                    <img src="../img/seeds02.png" class="img-contain" alt="Seeds 02" onclick="openModal(this.src)">
+                </div>
+                <div class="gallery-item-medium">
+                    <img src="../img/seeds03.png" class="img-contain" alt="Seeds 03" onclick="openModal(this.src)">
+                </div>
+                <div class="gallery-item-medium">
+                    <img src="../img/seeds04.png" class="img-contain" alt="Seeds 04" onclick="openModal(this.src)">
+                </div>
+                <div class="gallery-item-medium">
+                    <img src="../img/seeds05.png" class="img-contain" alt="Seeds 05" onclick="openModal(this.src)">
+                </div>
+                <div class="gallery-item-medium">
+                    <img src="../img/seeds06.png" class="img-contain" alt="Seeds 06" onclick="openModal(this.src)">
+                </div>
+                <div class="gallery-item-medium">
+                    <img src="../img/seeds07.png" class="img-contain" alt="Seeds 07" onclick="openModal(this.src)">
+                </div>
+                <div class="gallery-item-medium">
+                    <img src="../img/seeds08.jpg" class="img-contain" alt="Seeds 08" onclick="openModal(this.src)">
+                </div>
+                <div class="gallery-item-medium">
+                    <img src="../img/seeds09.jpg" class="img-contain" alt="Seeds 09" onclick="openModal(this.src)">
+                </div>
+                <div class="gallery-item-medium">
+                    <img src="../img/seeds10.jpg" class="img-contain" alt="Seeds 10" onclick="openModal(this.src)">
+                </div>
+                <div class="gallery-item-medium">
+                    <img src="../img/seeds11.jpg" class="img-contain" alt="Seeds 11" onclick="openModal(this.src)">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: HERRAMIENTAS Y APRENDIZAJES CLAVE -->
+    <section class="bg-light" id="herramientas">
         <div class="container">
             <div class="details-grid">
                 <div class="details-section">
                     <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="16 18 22 12 16 6"/>
-                            <polyline points="8 6 2 12 8 18"/>
-                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
                         Herramientas Utilizadas
                     </h3>
                     <div class="tech-list">
-                        <span class="tech-tag">Adobe Photoshop</span>
-                        <span class="tech-tag">Adobe Illustrator</span>
                         <span class="tech-tag">Figma</span>
-                        <span class="tech-tag">UI</span>
-                        <span class="tech-tag">UX</span>
+                        <span class="tech-tag">Photoshop</span>
                         <span class="tech-tag">HTML</span>
                         <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">UI</span>
+                        <span class="tech-tag">UX</span>
                     </div>
                     <p style="color: #b0b0b0; margin-top: 1rem;">
-                        El proyecto se llevó a cabo haciendo uso de herramientas como Photoshop para edición de imágenes.
-                        <br>
-                        Para el diseño de wireframes y el diseño de la web se hizo uso de Figma
-                        
+                        Se emplearon herramientas de diseño y prototipado como <strong>Figma</strong> para crear wireframes, prototipos interactivos y el sistema visual de la web. Se consultaron páginas de inspiración y se realizó un análisis exhaustivo de la competencia para definir tendencias y oportunidades de mejora. Photoshop se utilizó para la edición de imágenes y recursos gráficos.
                     </p>
                 </div>
-                
                 <div class="details-section">
                     <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-library-big-icon lucide-library-big"><rect width="8" height="18" x="3" y="3" rx="1"/><path d="M7 3v18"/><path d="M20.4 18.9c.2.5-.1 1.1-.6 1.3l-1.9.7c-.5.2-1.1-.1-1.3-.6L11.1 5.1c-.2-.5.1-1.1.6-1.3l1.9-.7c.5-.2 1.1.1 1.3.6Z"/></svg>                        Aprendizajes Clave
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-library-big-icon lucide-library-big"><rect width="8" height="18" x="3" y="3" rx="1"/><path d="M7 3v18"/><path d="M20.4 18.9c.2.5-.1 1.1-.6 1.3l-1.9.7c-.5.2-1.1-.1-1.3-.6L11.1 5.1c-.2-.5.1-1.1.6-1.3l1.9-.7c.5-.2 1.1.1 1.3.6Z"/></svg>
+                        Aprendizajes Clave
                     </h3>
-                    
                     <div class="learning-item">
-                        <h4>User Flow de una tienda online</h4>
-                        <p>Aprendí a definir y estructurar los recorridos que realiza un usuario dentro de una tienda online, 
-                            desde la navegación inicial hasta la compra final. Este proceso me permitió entender mejor cómo guiar al usuario de forma 
-                            lógica e intuitiva, optimizando cada paso para mejorar la experiencia y facilitar la conversión.</p>
+                        <h4>Definición de identidad visual</h4>
+                        <p>Aprendí a crear una identidad visual coherente y diferenciadora para una marca en un sector competitivo.</p>
                     </div>
-                    
+                    <div class="learning-item">
+                        <h4>Benchmarking y análisis de competencia</h4>
+                        <p>El análisis de tiendas similares permitió detectar buenas prácticas y errores comunes, mejorando la propuesta de valor.</p>
+                    </div>
+                    <div class="learning-item">
+                        <h4>Diseño centrado en la confianza</h4>
+                        <p>Me enfoqué en transmitir profesionalidad y seguridad a través del diseño, facilitando la conversión y la fidelización.</p>
+                    </div>
+                    <div class="learning-item">
+                        <h4>Iteración y validación de wireframes</h4>
+                        <p>Elaboré wireframes y prototipos interactivos, realizando pruebas de usabilidad para validar y mejorar la experiencia antes del diseño final.</p>
+                    </div>
+                    <div class="learning-item">
+                        <h4>Comunicación con el cliente</h4>
+                        <p>Mejoré mis habilidades para presentar propuestas, justificar decisiones de diseño y recoger feedback constructivo durante todo el proceso.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Modal -->
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Moisés Mora Maciá. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Modal para imágenes -->
     <div id="imageModal" class="modal" onclick="closeModal()">
         <span class="close" onclick="closeModal()">&times;</span>
         <div class="modal-content">
             <img id="modalImage" src="" alt="Imagen ampliada">
         </div>
     </div>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Moisés Mora Maciá. Todos los derechos reservados.</p>
-        </div>
-    </footer>
 
     <script>
         function openModal(imageSrc) {

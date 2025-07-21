@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nombre del Proyecto - Tu Nombre</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <!-- Barra de navegación sticky para secciones -->
+    <nav class="section-nav">
+        <ul>
+            <li><a href="#problema">Problema</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#userflow">User Flow</a></li>
+            <li><a href="#wireframes">Wireframes & Tests</a></li>
+            <li><a href="#ui">Diseño UI</a></li>
+            <li><a href="#resultados">Resultados</a></li>
+        </ul>
+    </nav>
+    <header>
+        <nav class="container">
+            <div class="logo"><a href="../index.html" class="logo">Moisés Mora Maciá</a></div>
+            <ul class="nav-links">
+                <li><a href="../index.html" class="back-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m15 18-6-6 6-6"/>
+                    </svg>
+                    Volver al Portfolio
+                </a></li>
+                <li><a href="mailto:moisesmrmc29@gmail.com" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/>
+                        <rect x="2" y="4" width="20" height="16" rx="2"/>
+                    </svg>
+                </a></li>
+                <li><a href="https://www.linkedin.com/in/mois%C3%A9s-mora-maci%C3%A1-b71350242/" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                        <rect width="4" height="12" x="2" y="9"/>
+                        <circle cx="4" cy="4" r="2"/>
+                    </svg>
+                </a></li>
+                <li><a href="https://www.github.com/moisesmrmc" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+                        <path d="M9 18c-4.51 2-5-2-7-2"/>
+                    </svg>
+                </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="project-header bg-light" id="header">
+        <div class="container">
+            <div class="project-header-content">
+                <h1 class="project-title">HabitSpark</h1>
+                <p class="project-subtitle">Aplicación para crear y mantener hábitos saludables</p>
+            </div>
+            <div class="project-header-featured card">
+                <img src="../img/habit-spark-mockup02.png" alt="Mockup hero del proyecto" onclick="openModal(this.src)">
+            </div>  
+        </div>
+    </section>
+
+    <!-- SECCIÓN: PROBLEMA -->
+    <section class="bg-dark" id="problema">
+        <div class="container">
+            <div class="section-grid">
+                <div class="overview-text">
+                    <h2 class="verde-titulo">Problema</h2>
+                    <p>El cliente necesitaba una solución digital que permitiera a sus usuarios comprar productos de forma sencilla y segura, mejorando la experiencia respecto a su web anterior.</p>
+                </div>
+                <div class="overview-image card">
+                    <img src="../img/habit-spark-problema.jpg" alt="Imagen del problema" onclick="openModal(this.src)">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: RESEARCH -->
+    <section class="bg-light" id="research">
+        <div class="container">            
+            <div class="overview-text">
+                <h2 class="verde-titulo">Research</h2>
+                <p>Se identificaron y analizaron usuarios modelo para comprender en profundidad sus necesidades, motivaciones y puntos de dolor. Además, se realizó un análisis de mercado y benchmarking de la competencia, identificando las mejores prácticas en usabilidad y diseño para aplicaciones similares.</p>     
+                <p>
+                    En el análisis de la competencia, revisamos aplicaciones como <strong>Habitica</strong> y <strong>Way of Life</strong>. Aunque algunas destacan por la <strong>gamificación</strong> y la <strong>personalización</strong>, suelen presentar interfaces poco atractivas o confusas, lo que puede dificultar la motivación y el uso a largo plazo. Nuestra propuesta combina lo mejor de estas referencias, apostando por un diseño <strong>moderno</strong>, <strong>accesible</strong> y centrado en mantener la <strong>motivación</strong> del usuario.
+                </p>
+            </div>               
+    
+            <div class="gallery-grid">
+                <div class="gallery-item-medium">
+                    <img src="../img/habit-spark-competencia.png" alt="Competencia" onclick="openModal(this.src)">
+                    <div class="gallery-item-info">
+                        <h3>Competencia</h3>
+                        <p>Aplicaciones de seguimiento de hábitos de la competencia, con interfaces poco atractivas y confusas</p>
+                    </div>
+                </div>
+                <div class="gallery-item-medium">
+                    <img src="../img/habit-spark-usuarios.png" alt="Usuarios ejemplo" onclick="openModal(this.src)">
+                    <div class="gallery-item-info">
+                        <h3>Usuarios modelo</h3>
+                        <p>Nos permiten entender las necesidades y motivaciones de los usuarios reales, y nos ayudan a crear una app que sea fácil de usar y mantener.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: USER FLOW -->
+    <section class="bg-dark" id="userflow">
+        <div class="container">
+            <div class="overview-text">
+                <h2 class="verde-titulo">User Flow</h2>
+                <p>Se muestran los user flows de la app, para que el usuario pueda entender cómo funciona la app y cómo puede interactuar con ella.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item-medium">
+                    <img src="../img/habit-spark-userflow01.png" alt="User Flow de la app" onclick="openModal(this.src)">
+                    <div class="gallery-item-info">
+                        <h3>User flow de la app</h3>
+                        <p>Onboarding de la app, registro, login, etc.</p>
+                    </div>
+                </div>
+                <div class="gallery-item-medium">
+                    <img src="../img/habit-spark-userflow02.png" alt="User Flow de la app" onclick="openModal(this.src)">
+                    <div class="gallery-item-info">
+                        <h3>User flow de la app</h3>
+                        <p>Consultar y editar progreso de hábitos, etc.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: WIREFRAMES & TESTS -->
+    <section class="bg-light" id="wireframes">
+        <div class="container">
+            <h2 class="verde-titulo">Wireframes & Tests</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item-medium">
+                    <img src="../img/habit-spark-wireframes01.png" alt="Wireframe de la app" class="img-contain" onclick="openModal(this.src)">
+                    <div class="gallery-item-info">
+                        <h3>Wireframes de la app</h3>
+                        <p>Onboarding de la app, registro, login, etc.</p>
+                    </div>
+                </div>
+                <div class="gallery-item-medium">
+                    <img src="../img/habit-spark-wireframes02.png" alt="Wireframe de la app" class="img-contain" onclick="openModal(this.src)">
+                    <div class="gallery-item-info">
+                        <h3>Wireframes de la app</h3>
+                        <p>Consultar y editar progreso de hábitos, etc.</p>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+    </section>
+
+    <!-- SECCIÓN: DISEÑO UI -->
+    <section class="bg-dark" id="ui">
+        <div class="container">
+            <h2 class="verde-titulo">Diseño UI</h2>
+            <div class="section-grid">
+                <div class="overview-text">
+                    <p>El diseño UI se centró en la claridad, la accesibilidad y la coherencia visual, utilizando una paleta de colores moderna y componentes reutilizables.</p>
+                    <p>
+                        <strong>Paleta de colores:</strong> El diseño utiliza como color principal un verde esmeralda (#10B981) que representa crecimiento y logro, acompañado de un azul profundo (#1E40AF) para transmitir confianza y estabilidad. Como acento, se emplea un rosa (#EC4899) para celebraciones y elementos motivadores. Los neutros se basan en una gama de grises modernos (#111827, #4B5563, #9CA3AF, #E5E7EB, #F3F4F6, #F9FAFB) para textos, fondos y tarjetas, y un color de error destacado (#EF4444).
+                    </p>
+                    <p>
+                        <strong>Tipografía:</strong> Darker Grotesque se aleja de las típicas Inter o Poppins, pero mantiene un toque moderno que sigue gustando y encaja bien en casi cualquier diseño. Aporta mucha personalidad y hará que se identifique rápidamente la marca por la tipografía.
+                    </p>
+                </div>
+                <div class="overview-image card">
+                    <img src="../img/habit-spark-designsystem.png" alt="Diseño UI" class="img-contain" onclick="openModal(this.src)">
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- SECCIÓN: RESULTADOS -->
+    <section class="bg-light" id="resultados">
+        <div class="container">
+            <h2 class="verde-titulo">Resultados</h2>
+            <div class="section-grid">
+                <div class="overview-text">
+                    <p>La nueva aplicación incrementó la tasa de conversión y mejoró la satisfacción de los usuarios, recibiendo feedback positivo tanto del cliente como de los usuarios finales.</p>
+                </div>
+                
+               
+                    <!-- Restaurar galería de resultados a una sola imagen o estructura simple si era así antes -->
+                    <div class="overview-image card">
+                        <img src="../img/habit-spark-dashboard.png" alt="Diseño dashboard" class="img-contain" onclick="openModal(this.src)">
+                    </div>
+            </div>
+          
+       
+        </div>
+    </section>
+
+    <!-- SECCIÓN: GALERÍA ADICIONAL -->
+    <section class="bg-dark" id="galeria">
+        <div class="container">
+            <h2 class="gallery-title">Galería adicional</h2>
+            <div class="gallery-grid">
+                <!-- Imagen destacada grande -->
+                <div class="gallery-item featured-image">
+                    <img src="../img/habit-spark-mockup01.png"  alt="Onboarding principal" onclick="openModal(this.src)">
+                    <div class="gallery-item-info">
+                        <h3>Mockup principal</h3>
+                        <p>Mockup principal de la app</p>
+                    </div>
+                </div>
+                <div class="gallery-item featured-image">
+                    <img src="../img/habit-spark-onboard01.png" class="img-contain" alt="Onboarding principal" onclick="openModal(this.src)">
+                    <div class="gallery-item-info">
+                        <h3>Pantalla de Onboarding</h3>
+                        <p>Bienvenida y presentación de la app</p>
+                    </div>
+                </div>
+                <!-- Dos imágenes medianas en paralelo -->
+                <div class="gallery-item-medium">
+                    <img src="../img/habit-spark-onboard02.png" class="img-contain" alt="Onboarding 2" onclick="openModal(this.src)">
+                    <div class="gallery-item-info">
+                        <h3>Onboarding: Creación de cuenta</h3>
+                    </div>
+                </div>
+                <div class="gallery-item-medium">
+                    <img src="../img/habit-spark-onboard03.png" class="img-contain" alt="Onboarding 3" onclick="openModal(this.src)">
+                    <div class="gallery-item-info">
+                        <h3>Onboarding: Introducción	</h3>
+                    </div>
+                </div>
+                <!-- Imagen simple (pequeña) -->
+                <div class="gallery-item-medium">
+                    <img src="../img/habit-spark-3dots.png" class="img-contain" alt="Eliminar hábito" onclick="openModal(this.src)">
+                    <div class="gallery-item-info">
+                        <h3>Opciones de hábito</h3>
+                        <p>Editar o eliminar un hábito</p>
+                    </div>
+                </div>
+                <!-- Imagen mediana con pie de foto -->
+                <div class="gallery-item-medium">
+                    <img src="../img/habit-spark-delete.png" class="img-contain" alt="Eliminar hábito" onclick="openModal(this.src)">
+                    <div class="gallery-item-info">
+                        <h3>Eliminar hábito</h3>
+                        <p>Confirmación de borrado de un hábito</p>
+                    </div>
+                </div>
+                <!-- Imagen mediana con pie de foto -->
+                <div class="gallery-item-medium">
+                    <img src="../img/habit-spark-dashboard.png" class="img-contain" alt="Dashboard" onclick="openModal(this.src)">
+                    <div class="gallery-item-info">
+                        <h3>Dashboard</h3>
+                        <p>Vista general del progreso y hábitos activos</p>
+                    </div>
+                </div>
+                <div class="gallery-item-medium">
+                    <img src="../img/habit-spark-onboard062.png" class="img-contain" alt="Dashboard" onclick="openModal(this.src)">
+                    <div class="gallery-item-info">
+                        <h3>Editar hábito</h3>
+                        <p>Pantalla de edición de hábito</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: HERRAMIENTAS Y APRENDIZAJES CLAVE -->
+    <section class="bg-light" id="herramientas">
+        <div class="container">
+            <div class="details-grid">
+                <div class="details-section">
+                    <h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        Herramientas Utilizadas
+                    </h3>
+                    <div class="tech-list">
+                        <span class="tech-tag">Figma</span>
+                        <span class="tech-tag">Photoshop</span>
+                        <span class="tech-tag">Illustrator</span>
+                        <span class="tech-tag">UI</span>
+                        <span class="tech-tag">UX</span>
+                        <span class="tech-tag">Mobile First</span>
+
+                        <!-- Añade o quita según el proyecto -->
+                    </div>
+                    <p style="color: #b0b0b0; margin-top: 1rem;">
+                        Se emplearon herramientas de diseño y prototipado como <strong>Figma</strong> para crear wireframes, prototipos interactivos y el sistema visual de la app. Además, se consultaron páginas de inspiración y recursos de diseño para definir tendencias actuales y aportar ideas innovadoras. Se realizó una comparación exhaustiva con aplicaciones de la competencia para identificar buenas prácticas y oportunidades de mejora. También se utilizaron herramientas de análisis y recopilación de feedback para validar las decisiones de diseño y optimizar la experiencia de usuario.
+                    </p>
+                </div>
+                <div class="details-section">
+                    <h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-library-big-icon lucide-library-big"><rect width="8" height="18" x="3" y="3" rx="1"/><path d="M7 3v18"/><path d="M20.4 18.9c.2.5-.1 1.1-.6 1.3l-1.9.7c-.5.2-1.1-.1-1.3-.6L11.1 5.1c-.2-.5.1-1.1.6-1.3l1.9-.7c.5-.2 1.1.1 1.3.6Z"/></svg>
+                        Aprendizajes Clave
+                    </h3>
+                    <div class="learning-item">
+                        <h4>Optimización del User Flow</h4>
+                        <p>Aprendí a definir y estructurar los recorridos que realiza un usuario dentro de una aplicación móvil, optimizando cada paso para mejorar la experiencia y facilitar la conversión.</p>
+                    </div>
+                    <div class="learning-item">
+                        <h4>Investigación centrada en el usuario</h4>
+                        <p>Aprendí a identificar y analizar usuarios modelo para comprender sus necesidades, motivaciones y puntos de dolor, lo que permitió diseñar una solución realmente adaptada a su público objetivo.</p>
+                    </div>
+                    <div class="learning-item">
+                        <h4>Benchmarking y análisis de competencia</h4>
+                        <p>El análisis de aplicaciones similares ayudó a detectar oportunidades de mejora y a definir una propuesta de valor diferenciada, combinando lo mejor de la gamificación y la personalización.</p>
+                    </div>
+                    <div class="learning-item">
+                        <h4>Diseño de sistemas visuales coherentes</h4>
+                        <p>Desarrollé una paleta de colores y una selección tipográfica que aportan personalidad y coherencia visual, facilitando la identificación de la marca.</p>
+                    </div>
+                    <div class="learning-item">
+                        <h4>Iteración y validación de wireframes</h4>
+                        <p>Elaboré wireframes y prototipos interactivos, realizando pruebas de usabilidad para validar y mejorar la experiencia antes del diseño final.</p>
+                    </div>
+                    <div class="learning-item">
+                        <h4>Comunicación con el cliente</h4>
+                        <p>Mejoré mis habilidades para presentar propuestas, justificar decisiones de diseño y recoger feedback constructivo durante todo el proceso.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Tu Nombre. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Modal para imágenes -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="Imagen ampliada">
+        </div>
+    </div>
+
+    <script>
+        function openModal(imageSrc) {
+            const modal = document.getElementById('imageModal');
+            const modalImage = document.getElementById('modalImage');
+            modal.style.display = 'block';
+            modalImage.src = imageSrc;
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            modal.style.display = 'none';
+        }
+
+        // Cerrar modal con tecla ESC
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html> 
